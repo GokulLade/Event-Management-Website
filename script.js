@@ -1,5 +1,4 @@
 //  Home Section
-
 var swiper = new Swiper(".home-slider", {
   effect: "coverflow",
   grabCursor: true,
@@ -12,6 +11,7 @@ var swiper = new Swiper(".home-slider", {
     modifier: 2,
     slideShadows: true,
   },
+  
   loop: true,
   autoplay: {
     delay: 3000,
@@ -19,9 +19,7 @@ var swiper = new Swiper(".home-slider", {
   },
 });
 
-
 //  Review Section
-
 var swiper = new Swiper(".review-slider", {
     slidesPerView: 1,
     grabCursor: true,
