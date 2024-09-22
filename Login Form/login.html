@@ -1,52 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>login to Evento</title>
-    <link rel="stylesheet" href="login.css" />
-  </head>
 
-  <body>
-    <div class="logo">
-      <div class="cont"><img src="images/universal.png" alt="" /></div>
-      <span>E<span>vento</span></span>
-    </div>
-    <div class="center">
-      <h1>Login</h1>
-      <form action="">
-        <div class="text_fill">
-          <input type="email" name="login name" id="email" required />
-          <span></span>
-          <label for="login name">email / Username</label>
-        </div>
-        <div class="text_fill">
-          <input type="password" name="loginpassword" id="password" required />
-          <span></span>
-          <label for="loginpassword">password</label>
-        </div>
-        <div class="pass">forgot password</div>
-        <input type="submit" value="login" onclick="submitData()" />
-        <div class="signup_link">Not a member? <a href="#">singup</a></div>
-      </form>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>login to Evento</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
 
-  <script>
-    function submitData() {
-      var email = document.getElementById("email").value;
-      var password = document.getElementById("password").value;
+<body>
+  <div class="center">
+    <h1>Welcome Back to <span>E</span>vento</h1>
+    <form action="" method="get">
+      <div class="text_fill">
+        <input type="email" name="login name" id="email" required />
+        <label for="login name">email / Username</label>
+      </div>
+      <div class="text_fill">
+        <input type="password" name="loginpassword" id="password" required />
+        <label for="loginpassword">password</label>
+      </div>
+      <div class="pass">forgot password</div>
+      <input type="submit" value="Login" onclick="submitData()" />
+      <div class="signup_link">Not a member? <a href="#">singup</a></div>
+    </form>
+  </div>
+</body>
 
-      if (email == "gokul@gmail.com" && password == "9112") {
-        alert("login Successful");
-        window.open(
-          "../index.html"
-          
-        );
-      } else {
-        alert("Login fail");
-      }
+<script>
+  function submitData() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    if (email == "gokul@gmail.com" && password == "9112") {
+      alert("login Successful");
+      window.open("../index.html");
     }
-  </script>
+    else {
+      alert("Login fail");
+    }
+  }
+</script>
+
 </html>

@@ -1,33 +1,11 @@
 body {
-    background-image: url("12 Ways to Make a Splash This Summer.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #e6e4e4;
     margin: 0;
     padding: 0;
-    font-family:  'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     height: 100vh;
     overflow: hidden;
-}
-.logo{
-    /* border: 2px solid red;  */
-    width: 10%;
-    margin: 18px 32px;
-
-}
-.logo span{
-    font-size: 48px;
-    font-weight: bold;
-    color: rgba(250, 0, 0, .6);
-    padding: 12px;
-    margin-left: 590px;
-}
-
-.logo span span{
-    font-size: 48px;
-    font-weight: bold;
-    color: black;
-    padding: 12px;
-    margin-left: -10px;
+    text-transform: capitalize;
 }
 
 .center {
@@ -44,7 +22,11 @@ body {
 .center h1 {
     text-align: center;
     padding: 0 0 20px 0;
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid rgba(165, 194, 140, 0.457);
+}
+
+.center h1 span{
+    color: red;
 }
 
 .center form {
@@ -79,32 +61,17 @@ form .text_fill {
     transition: .5s;
 }
 
-.text_fill span::before {
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background: #2691d9;
-    transition: .5s;
-}
-
 .text_fill input:focus~label,
 .text_fill input:valid~label {
     top: -5px;
     color: #2691d9;
 }
 
-.text_fill input:focus~span::before,
-.text_fill input:valid~span::before {
-    width: 100%;
-}
-
 .pass {
     margin: -5px 0 20px 5px;
     color: #a6a6a6;
     cursor: pointer;
+    transition: 1s;
 }
 
 .pass:hover {
@@ -140,6 +107,7 @@ input[type="submit"]:hover {
 .signup_link a {
     color: #2691d9;
     text-decoration: none;
+    transition: 1s;
 }
 
 .signup_link a:hover {
