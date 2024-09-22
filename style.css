@@ -1,7 +1,7 @@
+/*--------------------------------- Import google fonts ----------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap");
 
-/*...Header Section..........................................................................*/
-
+/*--------------------------------- Common CSS style for All ----------------------------------*/
 * {
   font-family: "Nunito", sans-serif;
   margin: 0;
@@ -21,6 +21,32 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: #222;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  background: #666;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #e46b40;
+}
+
+
+/*--------------------------------- Scrollbar CSS style ----------------------------------*/
 html::-webkit-scrollbar {
   width: 10px;
 }
@@ -34,12 +60,8 @@ html::-webkit-scrollbar-thumb {
   border-radius: 80rem;
 }
 
-body {
-  background: #222;
-}
-#login :hover{
-  border: 2px solid green;
-}
+
+/*--------------------------------- Header Section CSS style ----------------------------------*/
 .header {
   position: fixed;
   top: 0px;
@@ -52,10 +74,6 @@ body {
   justify-content: space-between;
   padding: 1.2rem 9%;
 }
-.heading span {
-  color: red;
-  text-transform: uppercase;
-}
 
 .header .logo {
   font-weight: bolder;
@@ -66,22 +84,24 @@ body {
 .header .logo span {
   color: red;
 }
+
+.header .navbar{
+  position: relative;
+  right: -10rem;
+}
+
 .header .navbar a {
   font-size: 1.7rem;
   color: #fff;
   margin-left: 2rem;
 }
 
-.header .navbar a:hover {
+.header .navbar .navI:hover {
   color: red;
 }
 
-/*...Home Section.............................................................................*/
 
-section {
-  padding: 2rem 9%;
-}
-
+/*--------------------------------- Home Section CSS style ----------------------------------*/
 .home .content {
   text-align: center;
   padding-top: 6rem;
@@ -99,21 +119,7 @@ section {
   color: red;
   text-transform: uppercase;
 }
-.btn {
-  margin-top: 1rem;
-  display: inline-block;
-  padding: 0.8rem 3rem;
-  font-size: 1.7rem;
-  border-radius: 0.5rem;
-  background: #666;
-  color: #fff;
-  cursor: pointer;
-  font-weight: 600;
-}
 
-.btn:hover {
-  background: #e46b40;
-}
 .home .home-slider .swiper-slide {
   overflow: hidden;
   border-radius: 0.5rem;
@@ -127,23 +133,8 @@ section {
   object-fit: cover;
 }
 
-/*...Heading Section............................................................................*/
 
-.heading {
-  text-align: center;
-  padding-bottom: 2rem;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 4rem;
-}
-
-.heading span {
-  color: blue;
-  text-transform: uppercase;
-}
-
-/*...Service Section............................................................................*/
-
+/*--------------------------------- Service Section CSS style ----------------------------------*/
 .heading1 {
   text-align: center;
   padding-bottom: 2rem;
@@ -156,6 +147,7 @@ section {
   color: #3867d6;
   text-transform: uppercase;
 }
+
 .service .box-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -182,6 +174,7 @@ section {
 .service .box-container .box i:hover {
   background: red;
 }
+
 .service .box-container .box h3 {
   font-size: 2rem;
   color: #fff;
@@ -194,8 +187,8 @@ section {
   line-height: 1.8;
 }
 
-/*...About Section..............................................................................*/
 
+/*--------------------------------- About Section CSS style ----------------------------------*/
 .heading2 {
   text-align: center;
   padding-bottom: 2rem;
@@ -208,6 +201,7 @@ section {
   color: #e46b40;
   text-transform: uppercase;
 }
+
 .about .row {
   display: flex;
   align-items: center;
@@ -242,8 +236,8 @@ section {
   line-height: 2;
 }
 
-/*...Gallery Section................................................................................*/
 
+/*--------------------------------- Gallery Section CSS style ----------------------------------*/
 .heading3 {
   text-align: center;
   padding-bottom: 2rem;
@@ -256,6 +250,7 @@ section {
   color: violet;
   text-transform: uppercase;
 }
+
 .gallery .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -319,11 +314,11 @@ section {
 }
 
 .gallery .box-container .box .icons a:hover {
-  color: var(--main-color);
+  color: rgb(252, 9, 9);
 }
 
-/*...Price Section................................................................................*/
 
+/*--------------------------------- Price Section CSS style ----------------------------------*/
 .heading4 {
   text-align: center;
   padding-bottom: 2rem;
@@ -336,6 +331,7 @@ section {
   color: orange;
   text-transform: uppercase;
 }
+
 .price .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -382,8 +378,8 @@ section {
   padding-right: 0.5rem;
 }
 
-/*...Review Section................................................................................*/
 
+/*--------------------------------- Review Section CSS style ----------------------------------*/
 .heading5 {
   text-align: center;
   padding-bottom: 2rem;
@@ -396,54 +392,55 @@ section {
   color: green;
   text-transform: uppercase;
 }
-.reivew .box {
+
+.review .box {
   border-radius: 0.5rem;
   background: #333;
   padding: 2rem;
   position: relative;
 }
 
-.reivew .box .fa-quote-right {
+.review .box .fa-quote-right {
   position: absolute;
   top: 2rem;
   right: 2rem;
-  color: var(--main-color);
+  color: rgba(0, 128, 0, 0.558);
   font-size: 5rem;
 }
 
-.reivew .box .user {
+.review .box .user {
   display: flex;
   align-items: center;
   gap: 1.5rem;
   padding-bottom: 1rem;
 }
 
-.reivew .box .user img {
+.review .box .user img {
   height: 7rem;
   width: 7rem;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.reivew .box .user h3 {
+.review .box .user h3 {
   font-size: 2rem;
   color: #fff;
 }
 
-.reivew .box .user span {
+.review .box .user span {
   font-size: 1.5rem;
   color: #eee;
 }
 
-.reivew .box p {
+.review .box p {
   line-height: 2;
   color: #eee;
   padding: 0.5rem 0;
   font-size: 1.6rem;
 }
 
-/*...Contact Section................................................................................*/
 
+/*--------------------------------- Contact Section CSS style ----------------------------------*/
 .heading6 {
   text-align: center;
   padding-bottom: 2rem;
@@ -456,6 +453,7 @@ section {
   color: #0dc1a8;
   text-transform: uppercase;
 }
+
 .contact form {
   max-width: 70rem;
   margin: 1rem auto;
@@ -499,8 +497,7 @@ section {
   resize: none;
 }
 
-/*...Footer Section................................................................................*/
-
+/*--------------------------------- Footer Section CSS style ----------------------------------*/
 .footer {
   background: #111;
 }
@@ -543,7 +540,8 @@ section {
   margin-top: 1rem;
   font-size: 2rem;
 }
-.btn1 {
+
+.credit a {
   border: none;
   color: red;
 }
