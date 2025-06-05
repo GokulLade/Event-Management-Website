@@ -1,4 +1,4 @@
-//  Home Section
+//  Home Section Scripting
 var swiper = new Swiper(".home-slider", {
   effect: "coverflow",
   grabCursor: true,
@@ -19,11 +19,11 @@ var swiper = new Swiper(".home-slider", {
   },
 });
 
-//  Review Section
+//  Review Section Scripting 
 var swiper = new Swiper(".review-slider", {
     slidesPerView: 1,
     grabCursor: true,
-    loop:true,
+    loop: true,
     spaceBetween: 10,
     breakpoints: {
       0: {
@@ -38,6 +38,6 @@ var swiper = new Swiper(".review-slider", {
     },
     autoplay:{
       delay: 5000,
-      disableOnInteraction:false,
+      disableOnInteraction: false,
   }
 });
